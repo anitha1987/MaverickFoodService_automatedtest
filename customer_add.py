@@ -41,7 +41,7 @@ class testCustomer_add(unittest.TestCase):
        elem.send_keys(pwd)
        time.sleep(2)
        elem.send_keys(Keys.RETURN)
-       time.sleep(3)
+       time.sleep(2)
        assert "Logged In"
 
 
@@ -74,7 +74,7 @@ class testCustomer_add(unittest.TestCase):
        elem.click()
        time.sleep(2)
        driver.get("https://anitha-mfscrm.herokuapp.com/customer_list")
-       time.sleep(3)
+       time.sleep(2)
        assert "Posted New Test Customer"
 
 

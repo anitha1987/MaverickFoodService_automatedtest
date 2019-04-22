@@ -13,7 +13,7 @@ class testProduct_add(unittest.TestCase):
         driver = self.driver
         driver.maximize_window()
         driver.get("https://anitha-mfscrm.herokuapp.com/home/")
-        time.sleep(3)
+        time.sleep(2)
         driver.find_element_by_xpath('//*[@id="myNavbar"]/ul[2]/li/a').click()
         elem = driver.find_element_by_id("id_username")
         elem.send_keys(user)
@@ -28,7 +28,7 @@ class testProduct_add(unittest.TestCase):
 
         driver.find_element_by_xpath('//*[@id="app-layout"]/div/div/div/div[3]/div/a/span').click()
         elem = driver.find_element_by_id('id_cust_name')
-        elem.send_keys("Karnitha")
+        elem.send_keys("James")
         elem = driver.find_element_by_id('id_product')
         elem.send_keys("05467")
         elem = driver.find_element_by_id('id_p_description')

@@ -3,7 +3,7 @@ import time
 from selenium import webdriver
 from selenium.webdriver.common.keys import Keys
 
-class testServices_edit(unittest.TestCase):
+class testProduct_edit(unittest.TestCase):
     def setUp(self):
         self.driver = webdriver.Chrome()
 
@@ -13,7 +13,7 @@ class testServices_edit(unittest.TestCase):
         driver = self.driver
         driver.maximize_window()
         driver.get("https://anitha-mfscrm.herokuapp.com/home/")
-        time.sleep(3)
+        time.sleep(2)
         driver.find_element_by_xpath('//*[@id="myNavbar"]/ul[2]/li/a').click()
         elem = driver.find_element_by_id("id_username")
         elem.send_keys(user)

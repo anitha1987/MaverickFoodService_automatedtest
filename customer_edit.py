@@ -13,7 +13,7 @@ class testCustomer_edit(unittest.TestCase):
         driver = self.driver
         driver.maximize_window()
         driver.get("https://anitha-mfscrm.herokuapp.com/home/")
-        time.sleep(5)
+        time.sleep(3)
         driver.find_element_by_xpath('//*[@id="myNavbar"]/ul[2]/li/a').click()
         elem = driver.find_element_by_id("id_username")
         elem.send_keys(user)
